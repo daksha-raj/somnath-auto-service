@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logoadd.png";
+import logo from "@/assets/logonav.jpg";
 import { processLogoRemoveBg } from "@/utils/removeLogoBg";
 
 const NewNavigation = () => {
@@ -9,23 +9,13 @@ const NewNavigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [processedLogo, setProcessedLogo] = useState<string>(logo);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setIsScrolled(window.scrollY > 50);
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
   useEffect(() => {
-  const isMobile = window.innerWidth < 768;
-  if (isMobile) {
-    setProcessedLogo(logo);
-  } else {
-    processLogoRemoveBg(logo)
-      .then(url => setProcessedLogo(url))
-      .catch(() => setProcessedLogo(logo));
-  }
-}, []);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     // Process logo to remove background
