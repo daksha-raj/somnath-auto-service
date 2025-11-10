@@ -57,7 +57,7 @@ const NewNavigation = () => {
               <img 
                 src={processedLogo} 
                 alt="Somnath Auto Service Station" 
-                className="h-14 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer" 
+                className="h-12 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer" 
                 onClick={() => scrollToSection("#home")}
               />
             </div>
