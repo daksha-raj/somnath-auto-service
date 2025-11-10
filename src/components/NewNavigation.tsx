@@ -57,7 +57,7 @@ const NewNavigation = () => {
               <img 
                 src={processedLogo} 
                 alt="Somnath Auto Service Station" 
-                className="h-24 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer" 
+                className="h-24 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer z-50" 
                 onClick={() => scrollToSection("#home")}
               />
             </div>
@@ -99,7 +99,7 @@ const NewNavigation = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white lg:hidden animate-fade-in">
+        <div className="fixed inset-0 z-40 bg-white/95 lg:hidden animate-fade-in">
           <div className="flex flex-col items-center justify-center h-full space-y-8 p-8">
             <img src={processedLogo} alt="Logo" className="h-28 w-auto mb-8" />
             {navLinks.map((link, index) => (
