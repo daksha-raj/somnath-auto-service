@@ -121,10 +121,12 @@ const NewNavigation = () => {
             <Button
               size="lg"
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground mt-8 text-xl px-12 py-6"
-              onClick={() => scrollToSection("#contact")}
             >
               <Phone className="mr-2 h-6 w-6" />
-              Book Service
+              <a href="tel:6355731725">
+                 Book Service
+              </a>
+             
             </Button>
           </div>
         </div>
