@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/FINAL-LOGO-PNG.png";
+import logo from "@/assets/logoadd.png";
 import { processLogoRemoveBg } from "@/utils/removeLogoBg";
 
 const NewNavigation = () => {
@@ -9,13 +9,23 @@ const NewNavigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [processedLogo, setProcessedLogo] = useState<string>(logo);
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.scrollY > 50);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const isMobile = window.innerWidth < 768;
+  if (isMobile) {
+    setProcessedLogo(logo);
+  } else {
+    processLogoRemoveBg(logo)
+      .then(url => setProcessedLogo(url))
+      .catch(() => setProcessedLogo(logo));
+  }
+}, []);
 
   useEffect(() => {
     // Process logo to remove background
@@ -57,7 +67,7 @@ const NewNavigation = () => {
               <img 
                 src={processedLogo} 
                 alt="Somnath Auto Service Station" 
-                className="h-12 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer" 
+                className="h-12 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer " 
                 onClick={() => scrollToSection("#home")}
               />
             </div>
