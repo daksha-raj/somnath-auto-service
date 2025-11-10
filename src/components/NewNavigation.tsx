@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logonav.jpg";
+import logo from "@/assets/logoadd.png";
 import { processLogoRemoveBg } from "@/utils/removeLogoBg";
 
 const NewNavigation = () => {
@@ -57,7 +57,7 @@ const NewNavigation = () => {
               <img 
                 src={processedLogo} 
                 alt="Somnath Auto Service Station" 
-                className="h-12 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer" 
+                className="h-14 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer" 
                 onClick={() => scrollToSection("#home")}
               />
             </div>
