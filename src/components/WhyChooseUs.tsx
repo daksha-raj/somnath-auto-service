@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section id="why-us" className="py-40 md:py-8 bg-background relative overflow-hidden">
+    <section id="why-us" className="py-40 md:py-48 bg-background relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl opacity-75" />
       <div className="absolute bottom-20 left-10 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl opacity-75" />
