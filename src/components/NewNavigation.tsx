@@ -33,13 +33,7 @@ const NewNavigation = () => {
     { name: "Contact", href: "#contact" },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
-    }
-  };
+
 
   return (
     <>
@@ -58,7 +52,7 @@ const NewNavigation = () => {
                 src={processedLogo} 
                 alt="Somnath Auto Service Station" 
                 className="h-24 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer" 
-                onClick={() => scrollToSection("#home")}
+               
               />
             </div>
 
