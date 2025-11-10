@@ -66,10 +66,13 @@ const NewHero = () => {
             <Button
               size="lg"
               className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-xl px-10 py-7 group shadow-lg hover:shadow-secondary/50 hover:scale-105 transition-all font-semibold rounded-xl"
-              onClick={() => scrollToSection("#contact")}
+              
             >
               <Phone className="mr-3 h-6 w-6" />
-              Book Service Now
+              <a href="tel:6355731725">
+                Book Service Now
+              </a>
+              
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
             </Button>
             <Button
@@ -86,8 +89,8 @@ const NewHero = () => {
           {/* Animated Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 mt-2 border-t border-white/10">
             {[
-              { number: "10+", label: "Years", icon: "⭐" },
-              { number: "5000+", label: "Vehicles", icon: "🚗" },
+              { number: "6+", label: "Years", icon: "⭐" },
+              { number: "1600+", label: "Vehicles", icon: "🚗" },
               { number: "100%", label: "Satisfaction", icon: "✓" },
               { number: "24/7", label: "Support", icon: "📞" },
             ].map((stat, index) => (

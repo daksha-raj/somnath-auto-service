@@ -10,6 +10,7 @@ const CommercialContracts = () => {
     "Gir Tours",
     "Somnath Rental Cars",
     "Girnar Taxi",
+    "Many More...",
   ];
 
   return (

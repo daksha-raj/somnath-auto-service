@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
     {
       icon: Shield,
       title: "Trusted & Reliable",
-      description: "Years of proven service excellence with hundreds of satisfied customers across Mendarda and Junagadh",
+      description: "Years of proven service excellence with hundreds of satisfied customers across near Mendarda",
     },
     {
       icon: Users,
@@ -95,7 +95,7 @@ const WhyChooseUs = () => {
 
       {/* Floating Stats Badge */}
       <div className="absolute -bottom-10 -right-10 bg-gradient-to-br from-secondary to-secondary/80 text-secondary-foreground p-8 rounded-3xl shadow-2xl animate-float border-8 border-background">
-        <div className="text-5xl font-black mb-2">10+</div>
+        <div className="text-5xl font-black mb-2">6+</div>
         <div className="text-base font-bold uppercase tracking-wide">Years Trust</div>
       </div>
     </div>
@@ -118,7 +118,7 @@ const WhyChooseUs = () => {
       </span>
     </h2>
     <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-4">
-      Located at Shop No. 8, Shivdarshan Complex, Visavadar Road, Mendarda — We provide complete automotive
+      Located at Shop No. 8, Shivdarshan Complex, Visavadar Road, Gopal Nagar, Mendarda — We provide complete automotive
       solutions with dedication and professionalism.
     </p>
   </div>

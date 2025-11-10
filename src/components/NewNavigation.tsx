@@ -57,7 +57,7 @@ const NewNavigation = () => {
               <img 
                 src={processedLogo} 
                 alt="Somnath Auto Service Station" 
-                className="h-12 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer " 
+                className="h-16 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer " 
                 onClick={() => scrollToSection("#home")}
               />
             </div>
@@ -79,11 +79,16 @@ const NewNavigation = () => {
               <Button
                 size="lg"
                 className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
-                onClick={() => scrollToSection("#contact")}
+                
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Book Now
+                
+                 <a href="tel:6355731725">
+               Book Now
+              </a>
               </Button>
+
+             
             </div>
 
             {/* Mobile Menu Button */}

@@ -107,7 +107,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="animate-fade-in" style={{ animationDelay: "0.3s" }}>
+          <div className="animate-fade-in lg:-ml-10" style={{ animationDelay: "0.3s" }}>
             <h3 className="text-lg font-semibold mb-4 text-gray-100">
               Contact Us
             </h3>
@@ -138,7 +138,7 @@ const Footer = () => {
                   className="flex items-start gap-3 text-gray-400 hover:text-secondary transition-all duration-300 group"
                 >
                   <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0 group-hover:text-secondary group-hover:scale-110 transition-all duration-300" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">Shop No. 8, Shivdarshan Complex, Mendarda, Junagadh</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300">Shop No. 8, Shivdarshan Complex, Visavadar Road, Gopal Nagar, Mendarda, Junagadh, Gujarat 362260</span>
                 </a>
               </li>
             </ul>
