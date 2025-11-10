@@ -44,11 +44,7 @@ const NewNavigation = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled
-            ? "bg-white shadow-2xl border-b border-border/50"
-            : "bg-white"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-24">
@@ -57,7 +53,7 @@ const NewNavigation = () => {
               <img 
                 src={processedLogo} 
                 alt="Somnath Auto Service Station" 
-                className="h-24 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer z-50" 
+                className="h-24 w-auto drop-shadow-2xl hover:scale-105 transition-transform cursor-pointer" 
                 onClick={() => scrollToSection("#home")}
               />
             </div>
@@ -99,7 +95,7 @@ const NewNavigation = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white/95 lg:hidden animate-fade-in">
+        <div className="fixed inset-0 z-40 bg-white lg:hidden animate-fade-in">
           <div className="flex flex-col items-center justify-center h-full space-y-8 p-8">
             <img src={processedLogo} alt="Logo" className="h-28 w-auto mb-8" />
             {navLinks.map((link, index) => (
